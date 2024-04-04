@@ -1,40 +1,32 @@
 .login {
+    font-family: "Titillium Web", sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    width:100%;
-    margin:0;
-    padding:0;      
-
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f1b458;
+    overflow: hidden;
 }
 
 .login-container {
-    width: 85%;
+    width: 80%;
     height: 90%;
     margin-top: 0;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
-    transition: box-shadow 0.3s, transform 0.3s; 
+    transition: box-shadow 0.3s, transform 0.3s;
 
 }
 
-.login-container:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+.login-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
-}
-
-.izquierda {
-    flex: 1;
-    height: 100%;
-    background-color: rgb(255, 204, 128, 0.9);
-    backdrop-filter: blur(50px);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-
 }
 
 .derecha {
@@ -44,4 +36,131 @@
     backdrop-filter: blur(50px);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10%;
+    margin-top: -5%;
+}
+
+.titulo {
+    margin-top: 5%;
+    margin-left: 9.5%;
+}
+
+.h2-login {
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    font-size: 35px;
+    margin-bottom: -5px;
+
+}
+
+.line {
+    display: inline-block;
+    width: 90px;
+    height: 7px;
+    background: linear-gradient(90deg, #f5bc42, #ff7f07);
+    border-radius: 5px;
+}
+
+.input-log {
+    padding: 15px 10px;
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #EDEDED;
+    color: #1B1B1B;
+    background-color: rgba(255, 255, 255, 0.534);
+
+}
+
+.btn-login-reg {
+    margin-top: 16px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background: #ffcb3d;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    width: 370px;
+}
+
+.btn-login-depth {
+    transition: transform 0.3s, background-color 0.3s;
+
+}
+
+.btn-login-depth:hover {
+    transform: translateY(2px);
+    background: #ffdd7e;
+}
+
+#seleccionar-rol {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#select-r {
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 370px;
+}
+
+
+.izquierda {
+    flex: 1;
+    height: 100%;
+    background: linear-gradient(180deg, #f5bc42, #ff9837);
+    backdrop-filter:  brightness(80%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 5px 0 5px -3px rgba(255, 172, 18, 0.945);   
+     align-items: center;
+    align-content: center;
+    text-align: center;
+    display: grid;
+}
+
+.h2-izquierda {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin-bottom: -5px;
+    margin-top: -2px;
+}
+
+.a-login {
+    font-size: 16px;
+    color: #ffa217;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.a-login:hover {
+    text-decoration: underline;
+}
+
+.l-izquierda{
+    display: inline-block;
+    width: 200px;
+    height: 7px;
+    background: white;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: 2%;
 }
