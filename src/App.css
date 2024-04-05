@@ -1,5 +1,81 @@
+:root {
+  /*colors*/
+  --color-primario: #eebf3d;
+  --color-titulo: #2E2D31;
+  --color-texto: hsl(100, 100%, 0%);
+  --color-grande: #E6E5E0;
+  --color-grande-alt: hsl(68, 18%, 100%);
+  --color-contenedor: hsl(60, 20%, 99%);
+  --color-borde: hsl(210, 2%, 65%);
+  --primer-gradiante: linear-gradient(0deg, var(--color-grande-alt) 0%, var(--color-grande) 100%);
+  --segundo-gradiante: linear-gradient(180deg, var(--color-grande-alt) 0%, var(--color-grande) 100%);
+  --tercero-gradiante: linear-gradient(180deg, var(--color-grande) 0%, var(--color-grande) 100%);
 
-body{
-  margin:0;
-  padding:0;
+  /*Tipografia*/
+  --fuente-cuerpo: 'Jost', sans-serif;
+  --fuente-secundaria: 'Caveat', cursive;
+
+  --fuente-tamaño-grande: 75px;
+  --fuente-tamaño-h1: 44px;
+  --fuente-tamaño-h2: 30px;
+  --fuente-tamaño-h3: 28px;
+  --fuente-tamaño-h4: 24px;
+  --fuente-tamaño-h5: 22px;
+
+  --fuente-tamaño-mas-larga: 21px;
+  --fuente-tamaño-larga: 20px;
+  --fuente-tamaño-normal: 18px;
+  --fuente-tamaño-pequeño: 16px;
+  --fuente-tamaño-mas-pequeño: 14px;
+  --fuente-tamaño-chiquito: 13px;
+
+
+  /*Sombras*/
+  --sombra: 5px 5px rgb(0 0 0 / 10%);
+
+  /*Transicion*/
+  --transicion: cubic-bezier(0.3, 0, 0.3, 1);
+
+}
+
+/*Reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-titulo);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.35;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
