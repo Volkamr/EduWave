@@ -18,7 +18,7 @@ import './NavToggle.css'
                         <div className="nav__data">
                             <ul className="nav_list">
                                 <li>
-                                    <Link to="/" className="nav__link text-cs">
+                                    <Link to="/EduWave/Perfil" className="nav__link text-cs">
                                         <h1 className="Nav_home text-cs"> Perfil </h1>
                                     </Link>
                                 </li>

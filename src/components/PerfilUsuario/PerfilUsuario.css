@@ -1,0 +1,87 @@
+.Container_info{
+    font-family: "Titillium Web", sans-serif;
+}
+
+.user-info-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    width:100%;
+    justify-content: space-between;
+}
+
+
+.foto_perfil, .columna1, .columna2{
+    display: inline-block;
+    width: 400px;
+}
+
+.foto_perfil{
+    top:0;
+    padding: 50px;
+}
+
+.h1_info_personal{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #ff9837;
+    margin-top:5px;
+    margin-bottom: 8px;
+    margin-left: 7%;
+    text-align: center;
+}
+
+.h3_info_perfil{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #ff9837;
+    margin-top:10px;
+    transition: color 0.3s;
+}
+
+.h3_info_perfil:hover{
+    color: #ffcb3d;
+}
+
+.p_info_perfil{
+    font-weight: 400;
+    font-size: 20px;
+    color:black;
+}
+
+.img_perfil{
+    border-radius: 50%;
+}
+
+.btn_editar_foto{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background: #ff9837;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn_editar_foto:hover{
+    transform: translateY(2px);
+    background: #ffcb3d;
+}
+
+.h1_horario{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #ff9837;
+    margin-top:5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+

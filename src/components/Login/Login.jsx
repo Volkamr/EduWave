@@ -11,7 +11,6 @@ const Login = () => {
     ]
 
     const [rol, setRol] = useState(roles[0]);
-
     const opcionesFiltradas = roles.filter((rol_s) => rol_s.value !== rol.value);
 
     const handleSelectItem = (event) => {
