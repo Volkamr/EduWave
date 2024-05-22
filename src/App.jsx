@@ -13,6 +13,7 @@ import CrearCursos from './components/Profesor/Crear/CrearCursos';
 import EditarCursos from './components/Profesor/Editar/EditarCursos';
 import CursoDetallado from './components/CursoDetallado/CursoDetallado';
 import LeccionDetallada from './components/LeccionDetallada/LeccionDetallada';
+import TareaDetallada from './components/TareaDetallada/TareaDetallada';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/EduWave/profesor/cursos/editar' element={<EditarCursos />} />
         <Route path="/EduWave/perfil/curso" element={<CursoDetallado />} />
         <Route path="/EduWave/perfil/curso/leccion" element={<LeccionDetallada />} />
+        <Route path="/EduWave/perfil/curso/tarea" element={<TareaDetallada />} />
       </Routes>
     </div>
   );
