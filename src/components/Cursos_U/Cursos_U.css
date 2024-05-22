@@ -1,0 +1,351 @@
+.cont_pagcurs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1erm;
+    background-color: #F7F7F7;
+}
+
+.divderecha {
+    background-color: white;
+}
+
+.busqueda {
+    padding-top: 40px;
+    display: flex;
+}
+
+.tituloh2 {
+    padding-top: 30px;
+}
+
+.filaekisde {
+    padding-top: 20px;
+    display: flex;
+}
+
+.dree {
+    height: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.ofiltrar {
+    padding-top: 10px;
+}
+
+.dree::after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: black;
+    content: '';
+    width: 100%;
+    height: 10px;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.dera {
+    height: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.dera::after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: black;
+    content: '';
+    width: 100%;
+    height: 10px;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.dirs {
+    height: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.dirs::after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: black;
+    content: '';
+    width: 100%;
+    height: 10px;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.elboton {
+    background-color: #F7F7F7;
+    width: 42px;
+    height: 41.5px;
+    padding-top: 2px;
+    position: relative;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.elboton::after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: black;
+    content: '';
+    width: 100%;
+    height: 10px;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.inputboxizq {
+    position: relative;
+    width: 500px;
+}
+
+.inputboxizq::after {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: black;
+    content: '';
+    width: 100%;
+    height: 10px;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.inputboxizq input {
+    width: 100%;
+    padding: 10px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: #F7F7F7;
+}
+
+.inputboxizq span {
+    position: absolute;
+    left: 0px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.409);
+    transition: 0.2s;
+}
+
+.inputboxizq input:valid~span,
+.inputboxizq input:focus~span {
+    color: #000000;
+    transform: translateX(1px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #F7F7F7;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    letter-spacing: 0.1em;
+
+}
+
+/* .inputboxizq input:valid,
+.inputboxizq input:focus {
+    border-right: 1px solid #A25035;
+    border-bottom: 1px solid #A25035;
+    border-top: 1px solid #A25035;
+
+} */
+
+.columnaekisde {
+    padding-top: 20px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1erm;
+}
+
+.courseimg {
+    background-color: #E3C8B7;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.curos {
+    width: 90%;
+    background-color: white;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trtrtr {
+
+
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.ppppp {
+    padding-top: 10px;
+    color: #0000008c;
+}
+
+.alo {
+    padding-top: 20px;
+}
+
+.guardas {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.puntos {
+    padding-top: 25px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.extra {}
+
+.punt {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.imagencursogrande {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #E3C8B7;
+}
+
+.nombre_cur_grande {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.descripcion_cur_grande {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.infocurso {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.fila_botones {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.sabermas {
+    background-color: #A25035;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.informacionprofesor {
+    display: flex;
+    padding-top: 50px;
+    margin-left: 30px;
+
+}
+
+.profesorfoto {
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+}
+
+.textoprofe {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.opiniones {
+    display: flex;
+}
+
+.opinions {
+    height: 70px;
+    width: 70px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.textoop {
+    padding-left: 30px;
+    padding-top: 70px;
+}
+
+.pfp {
+    margin-top: 40px;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.nombreus {
+    padding-left: 30px;
+}
+
+.trabajous {
+    padding-left: 30px;
+}
+
+.llitas {
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+}
+
+.cuerpocom {
+    display: flex;
+}
+
+.comentario {
+    color: #00000071;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.laik {
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+.likes {
+    display: flex;
+}
+
+.numero {
+    padding-left: 10px;
+    padding-top: 25px;
+}
