@@ -1,19 +1,27 @@
-.sllider-cursos-container{
+.slider-cursos-container{
     font-family: "Titillium Web", sans-serif;
+    margin-right: 0;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    height: 330px;
-    width: 300px;
+    position: relative;
+    max-width: 250px;
+    height: 170px;
     border-color: black;
     padding:5%;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
 
+.texto{
+    position: absolute;
+    bottom: 10%; 
+    left: 10%;  
+    right: 10%;  
+    text-align: left;
 }
 
 .item:hover {
@@ -22,37 +30,13 @@
 }
 
 .nombre_curso{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
+    color:black;
 
-}
-
-.texto{
-    text-align: left;
 }
 
 .datos_curso{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
-}
-
-.imagen_item{
-    border-radius: 10px;
-}
-
-.btn_item{
-    margin-top: 10px;
-    border-radius: 10px;
-    background: #ff9837;
-    color: white;
-    border: 0;
-    cursor: pointer;
-    width: 100px;
-    height: 20px;
-}
-
-.btn_item_txt{
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
 }

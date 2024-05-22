@@ -25,7 +25,7 @@ const SideBar = () => {
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <a href="#">
+                        <a href="/EduWave">
                             <box-icon class="bx bx-home" type='solid' name='home'></box-icon>
                             <span className="links_name">Home</span>
                         </a>
