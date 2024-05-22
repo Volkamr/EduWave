@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.cuerpo{
+
+.cuerpo {
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,43 +23,44 @@
     background: black;
     padding: 6px 14px;
     transition: all 0.5s ease;
-
+    /* aumentar el z-index para que la sidebar este arriba de todo  */
+    z-index: 2;
 }
 
-.sidebar.active{
+.sidebar.active {
     width: 240px;
 }
 
-.sidebar .logo_content .logo{
+.sidebar .logo_content .logo {
     fill: white;
     color: #ffff;
     display: flex;
     height: 50px;
-    width:100%;
-    align-items:center;
+    width: 100%;
+    align-items: center;
     opacity: 0;
     pointer-events: none;
 }
 
-.sidebar.active .logo_content .logo{
+.sidebar.active .logo_content .logo {
     opacity: 1;
     pointer-events: none;
 }
 
-.logo_content .logo .bx{
+.logo_content .logo .bx {
     font-size: 28px;
     margin-right: 5px;
 }
 
-.logo_content .logo .logo_name{
+.logo_content .logo .logo_name {
     font-size: 20px;
     font-weight: 400;
 }
 
-.sidebar #btn{
+.sidebar #btn {
     position: absolute;
     color: white;
-    fill:white;
+    fill: white;
     left: 50%;
     top: 6px;
     font-size: 20px;
@@ -68,26 +71,26 @@
     cursor: pointer;
 }
 
-.sidebar.active #btn{
+.sidebar.active #btn {
     left: 90%;
 }
 
 
-.sidebar ul{
+.sidebar ul {
     margin-top: 20px;
 }
 
-.sidebar ul li{ 
-   position: relative; 
-   height: 50px;
-   width: 100%;
-   margin: 0px;
-   list-style: none;
-   line-height: 50px;
-   border-radius: 12px;
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
 }
 
-.sidebar ul li .tooltip{
+.sidebar ul li .tooltip {
     position: absolute;
     height: 35px;
     width: 122px;
@@ -105,20 +108,20 @@
     display: block;
 }
 
-.sidebar.active ul li .tooltip{
+.sidebar.active ul li .tooltip {
     display: none;
 
 }
 
-.sidebar ul li:hover .tooltip{
+.sidebar ul li:hover .tooltip {
     transition: all 0.5s ease;
     top: 50%;
     opacity: 1;
 }
 
-.sidebar ul li a{
+.sidebar ul li a {
     color: #fff;
-    fill:white;
+    fill: white;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -127,13 +130,13 @@
     white-space: nowrap;
 }
 
-.sidebar ul li a:hover{
+.sidebar ul li a:hover {
     color: black;
     fill: black;
     background: white;
 }
 
-.sidebar ul li a box-icon{
+.sidebar ul li a box-icon {
     height: 50px;
     margin-right: 30px;
     min-width: 20px;
@@ -141,17 +144,17 @@
     line-height: 50px;
 }
 
-.sidebar .links_name{
+.sidebar .links_name {
     opacity: 0;
     pointer-events: none;
 }
 
-.sidebar.active .links_name{
+.sidebar.active .links_name {
     opacity: 1;
     pointer-events: auto;
 }
 
-.sidebar .profile_content{
+.sidebar .profile_content {
     position: absolute;
     color: #fff;
     fill: #fff;
@@ -160,14 +163,14 @@
     width: 100%;
 }
 
-.sidebar .profile_content  .profile{
+.sidebar .profile_content .profile {
     position: relative;
     padding: 10px 6px;
     height: 60px;
-    background:rgba(39, 39, 39, 0.747);
+    background: rgba(39, 39, 39, 0.747);
 }
 
-.profile_content  .profile .profile_detail{
+.profile_content .profile .profile_detail {
     display: flex;
     align-items: center;
     opacity: 0;
@@ -176,27 +179,27 @@
 
 }
 
-.profile .profile_detail img{
+.profile .profile_detail img {
     height: 45px;
     width: 45px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.profile .profile_detail .name_job{
+.profile .profile_detail .name_job {
     margin-left: 10px;
 }
 
-.profile .profile_detail .nombre{
+.profile .profile_detail .nombre {
     font-size: 15px;
     font-weight: 400;
 }
 
-.profile .profile_detail .job{
+.profile .profile_detail .job {
     font-size: 12px;
 }
 
-.profile #log_out{
+.profile #log_out {
     fill: white;
     position: absolute;
     left: 50%;
@@ -210,11 +213,11 @@
     text-align: center;
 }
 
-.sidebar.active .profile #log_out{
+.sidebar.active .profile #log_out {
     left: 88%;
 }
 
-.sidebar.active .profile .profile_detail{
+.sidebar.active .profile .profile_detail {
     opacity: 1;
     pointer-events: auto;
 }
