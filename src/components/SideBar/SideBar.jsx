@@ -20,12 +20,12 @@ const SideBar = () => {
                         <div className="logo_name">EduWave</div>
                     </div>
                     <box-icon className="bx bx-menu" id="btn" name='menu'
-                    onClick={toggleAction}
+                        onClick={toggleAction}
                     ></box-icon>
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <a href="#">
+                        <a href="/EduWave">
                             <box-icon class="bx bx-home" type='solid' name='home'></box-icon>
                             <span className="links_name">Home</span>
                         </a>
@@ -39,7 +39,7 @@ const SideBar = () => {
                         <span className="tooltip">Cursos</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/EduWave/perfil/progreso">
                             <box-icon className="bx bx-library" name='library'></box-icon>
                             <span className="links_name">Librería</span>
                         </a>

@@ -21,8 +21,8 @@ const Login = () => {
         <container className="login">
             <container className="login-container">
                 <div className="izquierda">
-                        <h2 className="h2-izquierda">Bienvenido a EduWave</h2>
-                        <span className="l-izquierda"></span>
+                    <h2 className="h2-izquierda">Bienvenido a EduWave</h2>
+                    <span className="l-izquierda"></span>
                 </div>
                 <div className="derecha">
                     <form >
@@ -53,9 +53,9 @@ const Login = () => {
                             <input className="btn-login-reg btn-login-depth" type="submit" value="Ingresar"></input>
 
                             <p className="mensaje">
-                                    ¿Olvidó su contraseña?
-                                    <a className="a-login">Recuperar contraseña</a>
-                                </p>
+                                ¿Olvidó su contraseña?
+                                <a className="a-login">Recuperar contraseña</a>
+                            </p>
                         </div>
                     </form>
 
