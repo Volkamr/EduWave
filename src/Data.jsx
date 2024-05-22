@@ -114,3 +114,64 @@ export const lista_lecciones =
         descripcion: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion "
     },
 ]
+
+export const leccionDetallada = 
+{
+    id:1,
+    nombre: "Nombre completo de la lección",
+    descripcion_corta: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion",
+    descripcion_larga:   `
+    Lección: [Título de la Lección]
+    
+    Descripción:
+    En esta lección, exploraremos [tema principal de la lección]. Nos sumergiremos en [aspectos clave o conceptos fundamentales relacionados con el tema]. A través de una combinación de teoría y práctica, aprenderemos [objetivos específicos que se abordarán durante la lección].
+    
+    Contenido:
+    - Introducción a [Tema]: Comenzaremos con una introducción a [tema], donde abordaremos su importancia y relevancia en [campo de estudio o aplicación].
+    - Conceptos Fundamentales: Profundizaremos en los conceptos fundamentales de [tema], incluyendo [subtemas relevantes].
+    - Estudios de Caso: Analizaremos varios estudios de caso relacionados con [tema], lo que nos permitirá entender su aplicación práctica en diferentes contextos.
+    - Práctica Guiada: Realizaremos ejercicios prácticos para afianzar los conceptos aprendidos durante la lección.
+    - Recursos Adicionales: Proporcionaremos recursos adicionales como lecturas recomendadas, enlaces a sitios web relevantes y materiales multimedia para aquellos que deseen profundizar más en [tema].
+
+    `
+    ,
+    fecha_creacion: "01/03/2024"
+
+}
+
+export const lista_temas = 
+[
+    {
+        nombre: "Tema 1",
+        archivos:
+        [
+            {
+                nombre: "archivo1.txt",
+            },
+            {
+                nombre: "archivo2.txt"
+            },
+            {
+                nombre: "archivo3.pdf"
+            }
+        ]
+    },
+    {
+        nombre: "Tema 2",
+        archivos:
+        [
+            {
+                nombre: "archivo1.txt",
+            },
+            {
+                nombre: "archivo2.txt"
+            },
+            {
+                nombre: "archivo3.pdf"
+            },
+            {
+                nombre: "video"
+            }
+        ]
+    }
+]
