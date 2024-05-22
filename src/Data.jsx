@@ -94,3 +94,23 @@ export const lista_fechas = [
         ]
     }
 ];
+
+export const lista_lecciones = 
+[
+    {
+        nombre: "Lección 1",
+        descripcion: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion "
+    },
+    {
+        nombre: "Lección 2",
+        descripcion: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion "
+    },
+    {
+        nombre: "Lección 3",
+        descripcion: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion "
+    },
+    {
+        nombre: "Lección 4",
+        descripcion: "Pequeña Descripcion del curso.Pequeña Descripcion del curso.Pequeña Descripcion "
+    },
+]
