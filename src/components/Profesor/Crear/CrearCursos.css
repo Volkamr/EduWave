@@ -1,0 +1,283 @@
+.CrearCursos{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: #0F0C09;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.crearCursosContenido{
+    padding: 2rem 2rem 0rem 5rem;
+    margin-left: 3.4rem;
+    background-color: #F7F7F7;
+    width: 98%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.tituloForm{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.formularioPri{
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem 0;
+    width: 95%;
+    display: flex;
+}
+
+.imgFileContainerPri{
+    margin-right: 3rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    width: 35%;
+}
+
+.imgPriF{
+    border-radius: 15px;
+    border: 2px dashed #E3C8B7;
+    padding: 1rem;
+}
+
+.imgPriF p{
+    font-size: 12px;
+    padding: 0 3rem 0 3rem;
+    color: #E3C8B7;
+}
+
+.iconFile{
+    font-size: 80px;
+    color: #E3C8B7;
+}
+
+.imgFileContainerSec{
+    margin-right: 3rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgSecF{
+    border-radius: 15px;
+    border: 2px dashed #E3C8B7;
+    padding: 1rem;
+}
+
+.imgSecF p{
+    font-size: 12px;
+    padding: 0 2rem 0 2rem;
+    color: #E3C8B7;
+}
+
+.labelTitulo{
+    font-weight: 500;
+    display: block;
+    font-size: 15px;
+    margin-bottom: .5rem;
+}
+
+.inputBox{
+    font-size: 12px;
+    width: 270px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.infoAdcCurso{
+    padding: 0rem 1rem 1rem 0;
+    display: flex;
+}
+
+.fDescC{
+    margin-right: 3rem;
+}
+
+.inputBoxG{
+    font-size: 12px;
+    width: 686px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.inputBoxS{
+    padding-left: 1rem;
+    font-size: 12px;
+    width: 270px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.contenidoCurso{
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.TituloSeg{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.formContenidoC{
+    display: flex;
+}
+
+.infoPriLect{
+    margin-right: 3rem;
+}
+
+.fPriLect{
+    display: flex;
+}
+
+.descLectura{
+    margin-right: 3rem;
+}
+
+.inputBoxD{
+    font-size: 12px;
+    width: 370px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.botonForm{
+    margin-top: 1rem;
+    text-align: center;
+    width: 7rem;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: .7rem;
+    background-color: #615E5A;
+    cursor: pointer;
+}
+
+.inputBoxV2{
+    font-size: 12px;
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;   
+}
+
+.botonReg{
+    margin-top: 1rem;
+    text-align: center;
+    width: 10rem;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: .7rem;
+    background-color: #615E5A;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.tareasCurso{
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.formsTareas{
+    display: flex;
+}
+
+.fPriTarea{
+    display: flex;
+}
+
+.evaForm{
+    display: flex;
+}
+
+.inputBoxV3{
+    font-size: 12px;
+    width: 195px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.inputBoxV3G{
+    font-size: 12px;
+    width: 195px;
+    height: 115px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: .7rem;
+}
+
+.infoPriTarea{
+    margin-right: 3rem;
+}
+
+.fPriTarea{
+    margin-right: 3rem;
+}
+
+.evaPreg{
+    margin-right: 3rem;
+}
+
+.botonFormV2{
+    margin-top: 1rem;
+    text-align: center;
+    width: 195px;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: .7rem;
+    background-color: #615E5A;
+    cursor: pointer;
+}
+
+.botonOpc{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.botonRegV2{
+    margin-top: 1rem;
+    text-align: center;
+    width: 10rem;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: .7rem;
+    background-color: #A25035;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
