@@ -4,7 +4,7 @@ import SideBar from '../SideBar/SideBar';
 import lupa from '../../assets/lupa2.png';
 import compu from '../../assets/prototipo.png';
 import flecha from '../../assets/stonks.png';
-import cal from '../../assets/ico_calendario.png';
+import calendar from '../../assets/nuevo_calendar.png';
 
 const l_progreso = () => {
     return (
@@ -40,65 +40,65 @@ const l_progreso = () => {
                     </button>
                     <div className='separador'></div>
                     <div className='separador2'></div>
-                    <div className='mallac'>
-                        <div className='tarjeta_curso'>
+                    <div className='mallacpro'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursopro'>
                             <h2>Nombre del curso</h2>
-                            <img src={compu} alt="" />
-                            <div className='row'>
-                                <img src={flecha} alt="" className='img_flecha' />
-                                <h6>Progreso: 80%</h6>
-                                <img src={cal} className='calendario' alt="" />
-                                <h6>Termina: 20/02/2025</h6>
+                            <img src={compu} alt="" className='principal' />
+                            <div className='rowo'>
+                                <img src={flecha} alt="" className='flep' />
+                                <h6 className='propo'>Progreso: 80%</h6>
+                                <img src={calendar} alt="" className='cap' />
+                                <h6 className='proti'>Termina: 20/02/2025</h6>
                             </div>
                         </div>
                     </div>

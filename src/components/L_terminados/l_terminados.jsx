@@ -3,7 +3,7 @@ import './l_terminados.css';
 import SideBar from '../SideBar/SideBar';
 import lupa from '../../assets/lupa2.png';
 import saludo from '../../assets/gow.png';
-import cal from '../../assets/ico_calendario.png';
+import cal from '../../assets/nuevo_calendar.png';
 import dip from '../../assets/diploma.png';
 
 const l_terminados = () => {
@@ -40,75 +40,75 @@ const l_terminados = () => {
                     </button>
                     <div className='separador'></div>
                     <div className='separador2'></div>
-                    <div className='mallac'>
-                        <div className='tarjeta_curso'>
+                    <div className='mallacter'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                {/* <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6> */}
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                {/* <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6> */}
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                {/* <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6> */}
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6>
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursoterminus'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='img_principal' />
+                            <img src={saludo} alt="" className='principter' />
                             <div className='row'>
-                                <img src={cal} className='img_calendar' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={dip} className='img_dip' alt="" />
-                                <h6>Certificado obtenido</h6>
+                                <img src={cal} className='calter' alt="" />
+                                <h6 className='tiempter'>Terminado: 20/02/2025</h6>
+                                <img src={dip} className='dipter' alt="" />
+                                <h6 className='certer'>Certificado obtenido</h6>
                             </div>
                         </div>
                     </div>

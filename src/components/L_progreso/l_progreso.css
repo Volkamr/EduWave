@@ -144,7 +144,7 @@
     padding: 15px;
 }
 
-.mallac {
+.mallacpro {
     grid-column: 1/10;
     display: grid;
     grid-template-columns: repeat(3, 33%);
@@ -152,14 +152,14 @@
     row-gap: 2em;
 }
 
-.tarjeta_curso {
+.tarjeta_cursopro {
     background-color: #ffffff;
-    height: 330px;
+    height: 350px;
     border-radius: 3%;
     position: relative;
 }
 
-.tarjeta_curso::after {
+.tarjeta_cursopro::after {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -172,12 +172,12 @@
 }
 
 
-.mallac div h2 {
-    margin-left: 15px;
-    margin-top: 10px;
+.mallacpro div h2 {
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
-.mallac div img {
+.principal {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -185,22 +185,38 @@
 }
 
 
-.row {
-    height: 30px;
+.rowo {
+
+    height: 40px;
+    width: 100%;
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-.row h6 {
-    margin-top: 10px;
-    margin-left: -10px;
-    color: rgba(0, 0, 0, 0.445);
+
+.flep {
+    margin-top: 5px;
+    padding-left: 20px;
+    height: 30px;
+    width: 50px;
 }
 
-.calendario {
-    margin-left: 50px;
+.cap {
+    margin-top: 5px;
+    padding-left: 20px;
+    margin-left: 35px;
+    height: 30px;
+    width: 50px;
 }
 
-.img_flecha {
-    margin-left: 10px;
+.propo {
+    padding-top: 15px;
+    padding-left: 8px;
+    color: rgba(0, 0, 0, 0.527);
+}
+
+.proti {
+    padding-top: 15px;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.527);
 }
