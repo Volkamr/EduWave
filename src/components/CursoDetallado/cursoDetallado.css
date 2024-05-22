@@ -1,0 +1,155 @@
+.curso_det_body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar_home {
+  flex: 0 0 70px;
+  width: 100%;
+}
+
+.curso_det_content {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 0;
+  background-color: #F7F7F7;
+  transition: all 0.5s ease;
+  height: 100vh;
+}
+
+.curso_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  flex: 0 0 950px;
+  overflow-y: auto; 
+  padding: 0 20px;
+  align-items: center;
+}
+
+.imagen_curso {
+  background-color: #C48857;
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.detalles_curso {
+  width: 80%;
+  text-align: left;
+  margin-top: 20px; 
+}
+
+.profesor {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px; 
+}
+
+.foto_prof img{
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 30%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.detalles_prof {
+  text-align: left;
+}
+
+.detalles_prof h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.detalles_prof p {
+  margin: 0;
+  color: #888;
+}
+
+.lecciones {
+  width: 80%; 
+  margin-top: 20px; 
+  text-align: left;
+}
+
+.leccion {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.img_leccion {
+  width: 90px;
+  height:70px;
+  background-color: #E3C8B7;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+.detalle_leccion h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.detalle_leccion p {
+  margin: 0;
+  color: #666;
+}
+
+.calendario {
+  margin: 0;
+  flex: 0 0 350px;
+  background-color: #FFFF;
+  padding: 5px;
+  align-items: center;
+  align-content: center;
+  overflow-y: scroll;
+}
+
+.fecha_div {
+  color: rgb(104, 104, 104);
+}
+
+.tarea_fecha_det {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.hora, .detalles_tarea {
+  flex: 1;
+  height: 80px;
+  padding: 5px;
+}
+
+.detalles_tarea {
+  border-left: 8px solid #A25035;
+  border-radius: 10px; /* corregido typo de border-radius */
+}
+
+.tareas_fecha {
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.tit_calendario {
+  align-self: center;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}

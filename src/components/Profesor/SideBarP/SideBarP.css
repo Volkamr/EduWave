@@ -18,10 +18,9 @@
     left: 0;
     height: 100%;
     width: 70px;
-    background: #0F0C09;
+    background: black;
     padding: 6px 14px;
     transition: all 0.5s ease;
-    z-index: 2;
 }
 
 .sidebar.active{

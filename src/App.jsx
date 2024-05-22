@@ -7,6 +7,11 @@ import L_progreso from './components/L_progreso/l_progreso';
 import L_favoritos from './components/L_favoritos/l_favoritos';
 import L_terminados from './components/L_terminados/l_terminados';
 import Cursos from './components/Cursos_U/Cursos_U';
+import PerfilProfesor from './components/Profesor/PerfilProfesor';
+import CursosP from './components/Profesor/CursosP/CursosP';
+import CrearCursos from './components/Profesor/Crear/CrearCursos';
+import EditarCursos from './components/Profesor/Editar/EditarCursos';
+import CursoDetallado from './components/CursoDetallado/CursoDetallado';
 
 function App() {
   return (
@@ -19,6 +24,11 @@ function App() {
         <Route path="/EduWave/perfil/progreso" element={<L_progreso />} />
         <Route path="/EduWave/perfil/favoritos" element={<L_favoritos />} />
         <Route path="/EduWave/perfil/terminados" element={<L_terminados />} />
+        <Route path='/EduWave/profesor' element={<PerfilProfesor />} />
+        <Route path='/EduWave/profesor/cursos' element={<CursosP />} />
+        <Route path='/EduWave/profesor/cursos/crear' element={<CrearCursos />} />
+        <Route path='/EduWave/profesor/cursos/editar' element={<EditarCursos />} />
+        <Route path="/EduWave/perfil/curso" element={<CursoDetallado />} />
       </Routes>
     </div>
   );
