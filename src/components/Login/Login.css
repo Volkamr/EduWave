@@ -8,7 +8,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f1b458;
+    background-color: #a45A49;
     overflow: hidden;
 }
 
@@ -68,7 +68,7 @@
     display: inline-block;
     width: 90px;
     height: 7px;
-    background: linear-gradient(90deg, #f5bc42, #ff7f07);
+    background-color: #a45A49;
     border-radius: 5px;
 }
 
@@ -87,7 +87,7 @@
     margin-top: 16px;
     padding: 10px 10px;
     border-radius: 30px;
-    background: #ffcb3d;
+    background-color: #a45A49;
     color: white;
     font-weight: 900;
     font-size: 20px;
@@ -103,7 +103,7 @@
 
 .btn-login-depth:hover {
     transform: translateY(2px);
-    background: #ffdd7e;
+    background: #c48A64;
 }
 
 #seleccionar-rol {
@@ -123,7 +123,7 @@
 .izquierda {
     flex: 1;
     height: 100%;
-    background: linear-gradient(180deg, #f5bc42, #ff9837);
+    background-color: #c48A64;
     backdrop-filter:  brightness(80%);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;

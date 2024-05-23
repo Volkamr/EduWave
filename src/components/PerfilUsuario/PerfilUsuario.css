@@ -1,87 +1,169 @@
-.Container_info{
-    font-family: "Titillium Web", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.user-info-wrapper{
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
-    width:100%;
-    justify-content: space-between;
+.grid_principal {
+  display: flex;
 }
 
-
-.foto_perfil, .columna1, .columna2{
-    display: inline-block;
-    width: 400px;
+.perfil-usuario {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
 }
 
-.foto_perfil{
-    top:0;
-    padding: 50px;
+aside {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 
-.h1_info_personal{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    color: #ff9837;
-    margin-top:5px;
-    margin-bottom: 8px;
-    margin-left: 7%;
-    text-align: center;
+.perfil {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.h3_info_perfil{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    color: #ff9837;
-    margin-top:10px;
-    transition: color 0.3s;
+.perfil img {
+  border-radius: 50%;
+  width: 228px;
+  height: 227px;
 }
 
-.h3_info_perfil:hover{
-    color: #ffcb3d;
+.img_perfil {
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.p_info_perfil{
-    font-weight: 400;
-    font-size: 20px;
-    color:black;
+.btn_editar_foto {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.img_perfil{
-    border-radius: 50%;
+.btn_editar_foto:hover {
+  background-color: #0056b3;
 }
 
-.btn_editar_foto{
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px 10px;
-    border-radius: 30px;
-    background: #ff9837;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    border: 0;
-    cursor: pointer;
-    width: 200px;
-    transition: transform 0.3s, background-color 0.3s;
+.perfil h2 {
+  margin: 10px 0 5px 0;
 }
 
-.btn_editar_foto:hover{
-    transform: translateY(2px);
-    background: #ffcb3d;
+.perfil p {
+  color: #666;
 }
 
-.h1_horario{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    color: #ff9837;
-    margin-top:5px;
-    margin-bottom: 8px;
-    text-align: center;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
+nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav ul li:hover {
+  background-color: #e0e0e0;
+}
+
+nav ul li.activo {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.contenido {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido h2 {
+  margin-bottom: 20px;
+}
+
+.contenido form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido form .form-group-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contenido form label {
+  margin-bottom: 5px;
+}
+
+.contenido form input,
+.contenido form .telefono select,
+.contenido form .telefono input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contenido form .telefono {
+  display: flex;
+  align-items: center;
+}
+
+.contenido form .telefono select {
+  margin-right: 10px;
+  max-width: 70px;
+  padding: 8px;
+}
+
+.contenido form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #090909;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contenido form button:hover {
+  background-color: #303030;
+}
+
+.contenido h3 {
+  margin-top: 20px;
+}
+
+.contenido p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.contenido label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contenido label input {
+  margin-right: 10px;
+}
