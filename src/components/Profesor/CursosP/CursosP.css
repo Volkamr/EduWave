@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.cursosPro{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: #0F0C09;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.cursosP{
+    margin-left: 3.4rem;
+    width: 98%;
+    display: flex;
+}
+
+.listaCursos{
+    padding: 2rem;
+    background-color: #F7F7F7;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.buscador{
+    margin: 1rem 0 1rem 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    height: 41px;
+}
+
+.lupa{
+    width: 25px;
+    color: #615E5A;
+}
+
+.buscador p {
+    font-size: 14px;
+    color: #615E5A;
+}
+
+.cabeceraBuscador{
+    padding: 1rem;
+}
+
+.cabeceraBuscador h2{
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+}
+
+.filtrosBusq{
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+}
+
+.fp{
+    margin-right: 1rem;
+    font-size: 15px;
+}
+
+.opcBusq{
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin: 0rem .5rem 0rem .5rem;
+    background-color: white;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.resultadosBusq{
+    padding: 1rem;
+}
+
+.contenidoCursoB{
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: .1rem;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.imgCursoBC{
+    margin: 1rem;
+    margin-right: 1rem;
+    margin-right: 0rem;
+    background-color: #E3C8B7;
+    border-radius: 15px;
+}
+
+.imgCursoB{
+    margin-bottom: -6.1rem;
+    width: 220px;
+}
+
+.infoCursoBusq{
+    padding: 1.4rem;
+}
+
+.infoCursoBusq h2{
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.infoCursoBusq p{
+    font-size: 12px;
+    width: 85%;
+    margin-bottom: .5rem;
+}
+
+.peq{
+    width: 28%;
+    text-align: center;
+}
+
+.peq p{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.puntosMas{
+    padding: 0.5rem;
+    font-size: 50px;
+}
+
+.detallesCurso{
+    padding: 8rem 4rem 4rem 4rem;
+    background-color:#ffffff;
+    width: 85%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.detallesCurso h2{
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.detallesCurso p{
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.imgPriCursoC{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    background-color: #E3C8B7;
+}
+
+.imgPriCurso{
+    position: relative;
+    width: 200px;
+    top: 27px;
+    left: 240px;
+}
+
+.infoDataCurso{
+    display: flex;
+}
+
+.infoDataIndv{
+    margin: 1rem 1.5rem 1rem 0;
+    padding: 1rem;
+    border: 2px dashed #A25035;
+    width: 125px;
+    height: 92px;
+}
+
+.opcCurso{
+    margin: 3rem 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.opcVer{
+    background-color: #E3C8B7;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.opcEdt{
+    background-color: #A25035;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.opcEli{
+    background-color: #615E5A;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-right: 1rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.imgOpi{
+    margin: 0rem 1rem 1rem 1rem;
+    cursor: pointer;
+}
+
+.opcOpi{
+    font-size: 10px;
+    color: #0F0C09;
+    cursor: pointer;
+}

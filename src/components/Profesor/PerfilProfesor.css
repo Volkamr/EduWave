@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.perfilProfesor{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: #0F0C09;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.profesorContenido{
+    padding: 2rem 2rem 0rem 5rem;
+    margin-left: 3.4rem;
+    background-color: #F7F7F7;
+    width: 98%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cabecera{
+    padding: 1rem;
+}
+
+.cabecera p{
+    color: #615E5A;
+    font-size: 15px;
+}
+
+.titulo{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+}
+
+.funciones{
+    display: flex;
+    padding: 1rem 2rem 2rem 1rem;
+}
+
+.crear{
+    padding: 2rem;
+    background-color: #C48857;
+    border-radius: 15px;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+.crear h2{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.crear p{
+    width: 70%;
+    font-size: 12px;
+}
+
+.buscar{
+    padding: 2rem;
+    background-color: #E3C8B7;
+    border-radius: 15px;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+.buscar h2{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.buscar p{
+    width: 70%;
+    font-size: 12px;
+}
+
+.contenidoProfe{
+    display: flex;
+    padding: 1rem;
+}
+
+.tituloSeg{
+    font-size: 21px;
+    font-family: "Poppins", sans-serif;
+}
+
+.popularesProfe{
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.popCurso{
+    margin: 1rem 1rem 2.4rem 0rem;
+    display: flex;
+}
+
+.num{
+    align-self: center;
+    padding: 0.7rem;
+    background-color: #ffffff;
+    border-radius: 10%;
+    margin-right: 2rem;
+}
+
+.num h2{
+    font-size: 26;
+    color: #0F0C09;
+}
+
+.num p{
+    font-size: 12px;
+    color: #615E5A;
+}
+
+.infoPopCurso{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.popCursoImg{
+    padding-top: 0.5rem;
+    background-color: #E3C8B7;
+    width: 100px;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.infoPopCursoIndv{
+    align-self: center;
+}
+
+.infoPopCurso h2{
+    font-size: 20px;
+}
+
+.infoPopCurso p{
+    font-size: 12px;
+    width: 90%;
+}
+
+.estadisticasProfe{
+    width: 45%;
+}
+
+.numEstadisticas{
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+}
+
+.est{
+    height: 134px;
+    width: 113px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-left: 1.9rem;
+    align-items: center;
+}
+
+.est h2{
+    margin: 1rem 0rem 0.5rem 0rem;
+    color: #0F0C09;
+    font-size: 26px;
+}
+
+.est p{
+    color: #615E5A;
+    font-size: 12px;
+}
+
+.imgContenedor{
+    margin: 0rem 2rem 0rem 2rem;
+    background-color: #C48857;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.ImgPri{
+    position: relative;
+    left: 201px;
+    top: 21px;
+    width: 220px;
+}
