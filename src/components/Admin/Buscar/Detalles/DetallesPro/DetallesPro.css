@@ -1,0 +1,126 @@
+.infoDetPripro{
+    display: flex;
+    padding: 1.5rem;
+}
+
+.imgDetProC{
+    background-color: #E3C8B7;
+    padding: 1rem 1rem 1rem 0rem;
+    border-radius: 15px;
+    margin-right: 3rem;
+}
+
+.imgDetPro{
+    position: relative;
+    width: 200px;
+    top: 25px;
+    left: 6px;
+}
+
+.estDetProIndv{
+    margin: .5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border: 2px dashed #A25035;
+    width: 125px;
+    height: 85px;
+}
+
+.infoGenDetPro{
+    padding: 0.5rem 1.5rem 3rem 1.5rem;
+}
+
+.cabInfoGenDetPro{
+    width: 95%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.cabInfoGenDetPro h2{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.cabInfoGenDetPro p{
+    font-size: 14px;
+}
+
+.contInfoGenDetPro{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.InfoGenDetProInd{
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.InfoGenDetProInd span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.InfoGenDetProInd p{
+    font-size: 12px;
+}
+
+.edtProfesorMenu{
+    position: absolute;
+    top: 16px;
+    right: 16.8px;
+    width: 740px;
+    height: 915px;
+    background-color: white;
+    padding: 2.7rem 5rem 0rem 5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 3px;
+}
+
+.edtProfesorMenu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+    transition: 0.5s ease;
+}
+
+.edtProfesorMenu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: 0.5s ease;
+}
+
+.closeIconFormEdt{
+    position: absolute;
+    top: 64px;
+    right: 67px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #E3C8B7;
+    transition: 0.5s ease;
+}
+
+.imgFormEdtPro{
+    border-radius: 15px;
+    border: 2px dashed #E3C8B7;
+    padding: 0rem;
+    width: 47%;
+    text-align: center;
+    margin-right: 2.2rem;
+    cursor: pointer;
+    align-content: center;
+}
+
+.imgFormEdtPro p{
+    font-size: 12px;
+    padding: 0;
+    color: #E3C8B7;
+}
+
+.iconFileEdt{
+    margin-top: 1.5rem;
+    font-size: 80px;
+    color: #E3C8B7;
+}
