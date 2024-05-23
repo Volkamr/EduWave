@@ -1,0 +1,57 @@
+.curso_det_body {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .sidebar_home {
+    flex: 0 0 70px;
+    width: 100%;
+  }
+  
+  .evaluacion {
+    display: flex;
+    cursor:pointer;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .foto_evaluacion{
+    background-color: #E3C8B7;
+    border-radius: 20px;
+    padding:5px
+  }
+  
+  .foto_evaluacion box-icon{
+    width: 30px;
+    height: 30px;
+    fill: #9d897d;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .detalles_evaluacion {
+    text-align: left;
+  }
+  
+  .detalles_prof h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .detalles_prof p {
+    margin: 0;
+    color: #888;
+  }
+
+  .puntuacion {
+    margin-top: 0;
+    flex: 0 0 350px;
+    background-color: #FFFF;
+    padding: 20px;
+  }
+

@@ -1,0 +1,41 @@
+.add-forum {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-forum h2 {
+    margin-bottom: 20px;
+  }
+  
+  .add-forum .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-forum .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-forum .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-forum button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-forum button:hover {
+    background-color: #0056b3;
+  }
+  

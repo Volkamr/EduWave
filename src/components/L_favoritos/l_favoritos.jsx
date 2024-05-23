@@ -3,7 +3,7 @@ import './l_favoritos.css';
 import SideBar from '../SideBar/SideBar';
 import lupa from '../../assets/lupa2.png';
 import saludo from '../../assets/saludo_ekisde.png';
-import cal from '../../assets/ico_calendario.png';
+import cal from '../../assets/nuevo_calendar.png';
 import estrella from '../../assets/estrela.png';
 
 const l_favoritos = () => {
@@ -41,82 +41,82 @@ const l_favoritos = () => {
                     <div className='separador'></div>
                     <div className='separador2'></div>
                     <div className='mallac'>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
-                        <div className='tarjeta_curso'>
+                        <div className='tarjeta_cursofav'>
                             <h2>Nombre del curso</h2>
-                            <img src={saludo} alt="" className='principal' />
-                            <div className='row'>
-                                <img src={cal} className='img_cal' alt="" />
-                                <h6>Terminado: 20/02/2025</h6>
-                                <img src={estrella} className='img_st1' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
-                                <img src={estrella} className='img_st2' alt="" />
+                            <img src={saludo} alt="" className='principalfav' />
+                            <div className='rowa'>
+                                <img src={cal} className='calfav' alt="" />
+                                <h6 className='tifav'>Terminado: 20/02/2025</h6>
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
+                                <img src={estrella} className='str' alt="" />
                             </div>
                         </div>
                     </div>

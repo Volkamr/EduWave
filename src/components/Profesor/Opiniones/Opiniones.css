@@ -1,0 +1,100 @@
+.opiniones-container {
+  display: flex;
+}
+
+.contenido-opiniones {
+  display: flex;
+  flex-direction: row;
+  width: 1000%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lista-cursos {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+}
+
+.lista-cursos h3 {
+  margin-top: 0;
+}
+
+.lista-cursos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista-cursos li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.detalle-curso {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.estadisticas {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.opiniones .opinion {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.opiniones .opinion h4 {
+  margin: 0;
+}
+
+.opiniones .opinion .calificacion {
+  color: #FFD700;
+}
+
+.responder-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.responder-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Añade estos estilos al final del archivo Opiniones.css */
+
+.estadisticas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estadisticas h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.estadisticas .opinion {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.estadisticas .opinion span {
+  font-weight: bold;
+}
