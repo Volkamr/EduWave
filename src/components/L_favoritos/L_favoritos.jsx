@@ -6,7 +6,7 @@ import saludo from '../../assets/saludo_ekisde.png';
 import cal from '../../assets/nuevo_calendar.png';
 import estrella from '../../assets/estrela.png';
 
-const l_favoritos = () => {
+const L_favoritos = () => {
     return (
         <div className='grid_principal'>
             <SideBar></SideBar>
@@ -128,4 +128,4 @@ const l_favoritos = () => {
     );
 };
 
-export default l_favoritos;
+export default L_favoritos;

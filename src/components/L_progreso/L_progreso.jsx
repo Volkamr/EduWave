@@ -6,7 +6,7 @@ import compu from '../../assets/prototipo.png';
 import flecha from '../../assets/stonks.png';
 import calendar from '../../assets/nuevo_calendar.png';
 
-const l_progreso = () => {
+const L_progreso = () => {
     return (
         <div className='grid_principal'>
             <SideBar></SideBar>
@@ -110,4 +110,4 @@ const l_progreso = () => {
     );
 };
 
-export default l_progreso;
+export default L_progreso;

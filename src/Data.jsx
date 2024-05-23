@@ -175,3 +175,31 @@ export const lista_temas =
         ]
     }
 ]
+
+export const lista_preguntas = [
+    {
+        pregunta: "Pregunta 1",
+        descripcion: "Descripcion pregunta 1",
+        opciones: ["opcion_a", "opcion_b", "opcion_c"]
+    },
+    {
+        pregunta: "Pregunta 2",
+        descripcion: "Descripcion pregunta 2",
+        opciones: ["opcion_a", "opcion_b", "opcion_c"]
+    },
+    {
+        pregunta: "Pregunta 3",
+        descripcion: "Descripcion pregunta 3",
+        opciones: ["opcion_a", "opcion_b", "opcion_c"]
+    },
+    {
+        pregunta: "Pregunta 4",
+        descripcion: "Descripcion pregunta 4",
+        opciones: ["opcion_a", "opcion_b", "opcion_c"]
+    },
+    {
+        pregunta: "Pregunta 5",
+        descripcion: "Descripcion pregunta 5",
+        opciones: ["opcion_a", "opcion_b", "opcion_c"]
+    }
+];

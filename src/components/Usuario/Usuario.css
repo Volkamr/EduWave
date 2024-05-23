@@ -1,208 +1,208 @@
 .home_body {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-  }
-  
-  .sidebar_home {
-    flex: 0 0 70px;
-    width: 100%;
-  }
-  
-  .home_content {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex: 1; 
-    padding: 0;
-    background-color: #F7F7F7;
-    transition: all 0.5s ease;
-    height: 100vh;
-  }
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
 
-  .contenido{
-    display: flex;
-    flex-direction: column;
-    background-color: #F7F7F7;
-    flex: 0 0 950px;
-    overflow: hidden;
-  }
+.sidebar_home {
+  flex: 0 0 70px;
+  width: 100%;
+}
 
-  .cursos_container{
-    flex:1;
-    flex: 260px 0 0;
-    background-color: #F7F7F7;
-    padding: 10px;
-    margin-left: 30px;
-  }
-  .info{
-    background-color: #F7F7F7;
-    display: flex;
-    flex:1;
-    flex-direction: row;
-  }
+.home_content {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex: 1; 
+  padding: 0;
+  background-color: #F7F7F7;
+  transition: all 0.5s ease;
+  height: 100vh;
+}
 
-  .tareas_div, .estadisticas {
-    flex:1;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+.contenido{
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  flex: 0 0 950px;
+  overflow: hidden;
+}
 
-  .estadisticas{
-    margin-left: 30px;
-  }
+.cursos_container{
+  flex:1;
+  flex: 260px 0 0;
+  background-color: #F7F7F7;
+  padding: 10px;
+  margin-left: 30px;
+}
+.info{
+  background-color: #F7F7F7;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+}
 
-  .tareas{
-    overflow-y: scroll; 
-    margin-left: 30px;
-    max-height: 300px;
-  }
-  
-  .header {
-    align-items: center;
-    margin-left: 40px;
-    margin-top: 10px;
-  }
-  
-  .titulo {
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    color: black;
-  }
+.tareas_div, .estadisticas {
+  flex:1;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-  .nombre_tarea{
-    font-size: 15px;
-  }
+.estadisticas{
+  margin-left: 30px;
+}
 
-  #tareas{
-    margin-left: 30px;
-  }
-  
-  .texto_p {
-    font-size: 12px;
-    color: rgb(97, 97, 97);
-  }
+.tareas{
+  overflow-y: scroll; 
+  margin-left: 30px;
+  max-height: 300px;
+}
 
-  .tarea{
-    position: relative;
-    max-width: 250px;
-    height: 70px;
-    border-color: black;
-    padding:2%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    margin-right: 0;
-    margin-bottom: 20px;
-    border-left: 10px solid black;
-  }
+.header {
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
 
-  .stats{
-    display: flex;
-    flex-direction: row;
-  }
+.titulo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  color: black;
+}
 
-  .stat_txt{
-    font-size: 10px;
-  }
+.nombre_tarea{
+  font-size: 15px;
+}
 
-  .stat_detail{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-color: black;
-    padding:2%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-  }
+#tareas{
+  margin-left: 30px;
+}
 
-  .mas{
-    display:flex;
-    flex-direction: row;
-    background-color: #C48857;
-    width: 300px;
-    height: 140px;
-    padding:2%;
-    border-radius: 20px;
-    margin-top: 5px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.texto_p {
+  font-size: 12px;
+  color: rgb(97, 97, 97);
+}
 
-  .texto_mas{
-    font-size: 10px;
-    color: black;
-    margin-top: 10px;
-    align-self: center;
-  }
-  
-  .ver_mas{
-    margin-top: 20px;
-    width: 113px;
-    height: 31px;
-    background-color: white;
-    align-items: center;
-    align-content: center;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 13px;
-    text-align: center;
-  }
+.tarea{
+  position: relative;
+  max-width: 250px;
+  height: 70px;
+  border-color: black;
+  padding:2%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  border-left: 10px solid black;
+}
 
-  .mas_img{
-    padding: 5px;
-    margin-bottom: 20px;
-  }
+.stats{
+  display: flex;
+  flex-direction: row;
+}
 
-  .calendario {
-    margin:0;
-    flex: 0 0 350px;
-    background-color: #FFFF;
-    padding:5px;
-    align-items: center;
-    align-content: center;
-    overflow-y: scroll; 
-  }
+.stat_txt{
+  font-size: 10px;
+}
 
-  .fecha_div{
-    color: rgb(104, 104, 104);
-  }
+.stat_detail{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-color: black;
+  padding:2%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
 
-  .tarea_fecha_det{
-    display:flex;
-    flex-direction: row;
-    margin-top: 10px;
-  }
+.mas{
+  display:flex;
+  flex-direction: row;
+  background-color: #C48857;
+  width: 300px;
+  height: 140px;
+  padding:2%;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  .hora, .detalles_tarea{
-    flex: 1;
-    height: 80px;
-    padding: 5px
-  }
+.texto_mas{
+  font-size: 10px;
+  color: black;
+  margin-top: 10px;
+  align-self: center;
+}
 
-  .detalles_tarea{
-    border-left: 8px solid #A25035;
-    border-radius: 1opx;
-  }
+.ver_mas{
+  margin-top: 20px;
+  width: 113px;
+  height: 31px;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+}
 
-  .tareas_fecha{
-    padding: 3px;
-    margin-bottom: 30px;
-  }
+.mas_img{
+  padding: 5px;
+  margin-bottom: 20px;
+}
 
-  .tit_calendario{
-    align-self: center;
-    margin-left: 100px;
-    margin-bottom: 20px;
-  }
+.calendario {
+  margin:0;
+  flex: 0 0 350px;
+  background-color: #FFFF;
+  padding:5px;
+  align-items: center;
+  align-content: center;
+  overflow-y: scroll; 
+}
 
-  .h3_puntuacion{
-    margin-top: 40px;
-  }
+.fecha_div{
+  color: rgb(104, 104, 104);
+}
+
+.tarea_fecha_det{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.hora, .detalles_tarea{
+  flex: 1;
+  height: 80px;
+  padding: 5px
+}
+
+.detalles_tarea{
+  border-left: 8px solid #A25035;
+  border-radius: 1opx;
+}
+
+.tareas_fecha{
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.tit_calendario{
+  align-self: center;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.h3_puntuacion{
+  margin-top: 40px;
+}

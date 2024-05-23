@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/Login/Login';
-import Usuario from './components/PerfilUsuario/Usuario';
+import Usuario from './components/Usuario/Usuario';
 import PerfilUsuario from './components/PerfilUsuario/PerfilUsuario';
 import L_progreso from './components/L_progreso/L_progreso';
 import L_favoritos from './components/L_favoritos/L_favoritos';
@@ -16,6 +16,7 @@ import TareaDetallada from './components/TareaDetallada/TareaDetallada';
 import BuscarAdm from './components/Admin/Buscar/BuscarAdm';
 import ForumPage from './components/ForumPage/ForumPage';
 import SideBar from './components/SideBar/SideBar';
+import Examen from './components/Examen/Examen';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/EduWave/tarea" element={<TareaDetallada />} />
         <Route path="/EduWave/admin/buscar" element={<BuscarAdm />} />
         <Route path="/EduWave/foros" element={<ForumPage />} />
+        <Route path="/EduWave/perfil/curso/tarea/examen" element={<Examen />} />
       </Routes>
     </div>
   );

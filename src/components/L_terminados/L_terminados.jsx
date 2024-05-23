@@ -6,7 +6,7 @@ import saludo from '../../assets/gow.png';
 import cal from '../../assets/nuevo_calendar.png';
 import dip from '../../assets/diploma.png';
 
-const l_terminados = () => {
+const L_terminados = () => {
     return (
         <div className='grid_principal'>
             <SideBar></SideBar>
@@ -120,4 +120,4 @@ const l_terminados = () => {
     );
 };
 
-export default l_terminados;
+export default L_terminados;
