@@ -1,0 +1,36 @@
+.forum-detail {
+  width: 75%;
+  padding: 20px;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.post-content {
+  margin: 20px 0;
+}
+
+.post-actions button {
+  margin-right: 10px;
+}
+
+.comments {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  padding: 5px 0;
+}

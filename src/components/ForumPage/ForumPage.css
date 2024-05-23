@@ -1,0 +1,10 @@
+.forum-grid {
+  display: flex;
+  height: 100vh;
+}
+
+.forum-content {
+  display: flex;
+  flex-direction: row;
+  width: 1300%;
+}
