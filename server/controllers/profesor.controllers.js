@@ -12,16 +12,24 @@ export const getProfesores = async(req, res) =>{
     res.json(result);
 }
 
-export const getProfesor = async(req, res) =>{
-    const nombre = req.params.nombre;
-    const [result] = await pool.query(
-        "Select cedula, fotoPerfil, nombre, profesion, edad, celular, email, password, genero, estado from instructores i " + 
-        "inner join municipios m on i.municipio_id = m.id " + 
-        "inner join departamentos d on m.departamento_id = d.id " + 
-        "where nombre = ? and estado = 1",
-        nombre
-    );
-    res.json(result);
+export const getProfesor = async (req, res) => {
+
+    const token = req.params.accessToken;
+    const key = process.env.SECRET_KEY;
+
+    if (token) {
+        jwt.verify(token, key, (err, decoded) => {
+            if (err) {
+                return res.status(403).json({ message: "Token inválido" })
+            } else {
+                req.cedula = decoded.cedula;
+            }
+        })
+    }
+
+    const cedula = req.cedula;
+    const [result] = await pool.query("SELECT * FROM instructores WHERE cedula = ? ", [cedula]);
+    return res.status(200).json(result[0]);
 }
 
 export const createProfesor = async(req, res) =>{

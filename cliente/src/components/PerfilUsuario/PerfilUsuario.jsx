@@ -4,8 +4,33 @@ import profileImage from '../../assets/john_usuario.png';  // Ruta al ícono
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import SideBar from '../SideBar/SideBar';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { getUserRequest } from '../../api/estudiantes.api';
 
 const PerfilUsuario = () => {
+
+  const [user, setUser] = useState([]);
+    const [token, setToken] = useState(useParams().accessToken)
+
+    useEffect(() => {
+        const loggedUserJSON = window.localStorage.getItem('UserToken');
+        const local_data = JSON.parse(loggedUserJSON)
+        if (loggedUserJSON != null && loggedUserJSON.token == token) {
+            setToken(JSON.stringify(local_data.token));
+        }
+
+    }, [token]);
+
+    useEffect(() => {
+        async function loadUser(token) {
+            const response = await getUserRequest(token);
+            setUser(response.data)
+            console.log(response)
+        }
+        loadUser(token)
+    }, [token]);
+
   const [activeTab, setActiveTab] = useState('informacion');
   const [phone, setPhone] = useState('');
   const [profilePic, setProfilePic] = useState(profileImage);
@@ -29,13 +54,13 @@ const PerfilUsuario = () => {
             <form>
               <div className="form-group">
                 <label>Nombre completo:</label>
-                <input type="text" defaultValue="John Jario Smith del Carmen Cortéz" />
+                <input type="text" defaultValue={user.nombre} />
               </div>
 
               <div className="form-group-inline">
                 <div className="form-group">
-                  <label>Nombre de usuario:</label>
-                  <input type="text" defaultValue="xXx_Jjohnmith234_xXx" />
+                  <label>Edad:</label>
+                  <input type="text" defaultValue={user.edad} />
                 </div>
 
                 <div className="form-group">
@@ -43,7 +68,7 @@ const PerfilUsuario = () => {
                   <PhoneInput
                     country={'co'}
                     value={phone}
-                    onChange={phone => setPhone(phone)}
+                    onChange={phone => setPhone(user.celular)}
                     inputStyle={{ width: '100%' }}
                     containerStyle={{ width: '100%' }}
                     buttonStyle={{ paddingRight: '10px' }}
@@ -53,7 +78,7 @@ const PerfilUsuario = () => {
 
               <div className="form-group">
                 <label>Correo electrónico:</label>
-                <input type="email" defaultValue="xXx_Jjohnmith234_xXx@gmail.com" />
+                <input type="email" defaultValue={user.email} />
               </div>
 
               <div className="form-group">
@@ -103,7 +128,7 @@ const PerfilUsuario = () => {
 
   return (
     <div className="grid_principal">
-      <SideBar />
+      <SideBar accessToken={token}/>
       <div className="perfil-usuario">
         <aside>
           <div className="perfil">

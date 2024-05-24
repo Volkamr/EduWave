@@ -12,19 +12,8 @@ export const getEstudiantes = async(req, res) =>{
     res.json(result);
 }
 
-export const getEstudiante = async(req, res) =>{
-    const nombre = req.params.nombre;
-    const [result] = await pool.query(
-        "Select cedula, fotoPerfil, nombre, edad, celular, email, password, genero, estado from empleados e " + 
-        "inner join municipios m on e.municipio_id = m.id " + 
-        "inner join departamentos d on m.departamento_id = d.id " + 
-        "where nombre = ? and estado = 1",
-        nombre
-    );
-    res.json(result);
-}
 
-export const getUser = async (req, res) => {
+export const getEstudiante = async (req, res) => {
 
     const token = req.params.accessToken;
     const key = process.env.SECRET_KEY;
@@ -34,20 +23,14 @@ export const getUser = async (req, res) => {
             if (err) {
                 return res.status(403).json({ message: "Token inválido" })
             } else {
-                req.idUsuario = decoded.idUsuario;
+                req.cedula = decoded.cedula;
             }
         })
     }
 
-    const id = req.idUsuario;
-    const [result] = await pool.query(
-        "Select cedula, fotoPerfil, nombre, edad, celular, email, password, genero, estado from empleados e " + 
-        "inner join municipios m on e.municipio_id = m.id " + 
-        "inner join departamentos d on m.departamento_id = d.id " + 
-        "where nombre = ? and estado = 1",
-        nombre
-    );
-    return res.status(200).json(result[0])
+    const cedula = req.cedula;
+    const [result] = await pool.query("SELECT * FROM empleados WHERE cedula = ? ", [cedula]);
+    return res.status(200).json(result[0]);
 }
 
 export const createEstudiante = async(req, res) =>{

@@ -4,7 +4,7 @@ import 'boxicons';
 import './SideBarP';
 import { Link } from 'react-router-dom';
 
-const SideBarP = () => {
+const SideBarP = ({accessToken}) => {
 
     const [action, setAction] = useState("");
     const toggleAction = () => {
@@ -26,11 +26,18 @@ const SideBarP = () => {
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <Link to="/EduWave/profesor">
+                        <Link to={`/EduWave/profesor/${accessToken}`}>
                             <box-icon class="bx bx-home" type='solid' name='home'></box-icon>
                             <span className="links_name">Home</span>
                         </Link>
                         <span className="tooltip">Home</span>
+                    </li>
+                    <li>
+                        <a href={`/EduWave/profesor/${accessToken}`}>
+                            <box-icon type='solid' name='user'></box-icon>
+                            <span className="links_name">Perfil</span>
+                        </a>
+                        <span className="tooltip">Perfil</span>
                     </li>
                     <li>
                         <Link to="/EduWave/profesor/cursos">

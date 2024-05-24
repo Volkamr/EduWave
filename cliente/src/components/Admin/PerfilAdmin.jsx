@@ -41,7 +41,7 @@ const PerfilProfesor = () => {
             </div>
             <div className="AdminContenido">
                 <div className="cabecera">
-                    <h2 className='titulo'>Hello, Adm. Maria Paula</h2>
+                    <h2 className='titulo'>Hello, Admin</h2>
                     <p> Hoy es Miercoles, 30 Octubre 2021 </p>
                 </div>
 

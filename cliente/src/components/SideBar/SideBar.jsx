@@ -3,7 +3,7 @@ import Profile from "../../assets/profile.png";
 import 'boxicons';
 import './sideBar.css';
 
-const SideBar = () => {
+const SideBar = ({ accessToken }) => {
 
     const [action, setAction] = useState("");
     const toggleAction = () => {
@@ -25,11 +25,18 @@ const SideBar = () => {
                 </div>
                 <ul className="nav_list">
                     <li>
-                        <a href="/EduWave">
+                        <a href={`/EduWave/${accessToken}`}>
                             <box-icon class="bx bx-home" type='solid' name='home'></box-icon>
                             <span className="links_name">Home</span>
                         </a>
                         <span className="tooltip">Home</span>
+                    </li>
+                    <li>
+                        <a href={`/EduWave/${accessToken}/perfil`}>
+                            <box-icon type='solid' name='user'></box-icon>
+                            <span className="links_name">Perfil</span>
+                        </a>
+                        <span className="tooltip">Perfil</span>
                     </li>
                     <li>
                         <a href="#">

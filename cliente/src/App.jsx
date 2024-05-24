@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/EduWave/:accessToken" element={<Usuario />} />
-        <Route path="/EduWave/perfil" element={<PerfilUsuario />} />
+        <Route path="/EduWave/:accessToken/perfil" element={<PerfilUsuario />} />
         <Route path="/EduWave/perfil/progreso" element={<L_progreso />} />
         <Route path="/EduWave/perfil/favoritos" element={<L_favoritos />} />
         <Route path="/EduWave/perfil/terminados" element={<L_terminados />} />

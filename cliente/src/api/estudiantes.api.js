@@ -11,3 +11,15 @@ export const postLoginEstudianteRequest = async (cedula, password) =>{
         password: password
     })
 }
+
+export const getUserRequest = async (authToken) => {
+
+    const response = await axios.get(`http://localhost:4000/EduWave/Api/Estudiante/${authToken}`,
+        {
+            headers: {
+                'Authorization': `Bearer ${authToken}`,
+            }
+        }
+    );
+    return response;
+}

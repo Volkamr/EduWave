@@ -4,10 +4,12 @@ import SliderCursos from '../SliderCursos/SliderCursos';
 import Sidebar from '../SideBar/SideBar';
 import { lista_tareas, lista_fechas } from '../../Data';
 import Imagen from '../../assets/imagen_mas.png'
+import { getUserRequest } from '../../api/estudiantes.api';
+import { useParams } from 'react-router-dom';
 
 const Usuario = () => {
 
-    /*
+    
     const [user, setUser] = useState([]);
     const [token, setToken] = useState(useParams().accessToken)
 
@@ -24,11 +26,11 @@ const Usuario = () => {
         async function loadUser(token) {
             const response = await getUserRequest(token);
             setUser(response.data)
-            console.log(user)
+            console.log(response)
         }
         loadUser(token)
     }, [token]);
-    */
+
 
     const [fechaActual, setFechaActual] = useState(new Date());
 
@@ -43,12 +45,12 @@ const Usuario = () => {
 
         <div className="home_body">
             <div className="sidebar_home">
-                <Sidebar />
+                <Sidebar accessToken={token}/>
             </div>
             <div className="home_content">
                 <div className="contenido">
                     <div className="header">
-                        <h1 className="titulo">Hola, Maria Paula</h1>
+                        <h1 className="titulo">Hola, {user.nombre}</h1>
                         <p className="texto_p">Hoy es {fechaActual.toLocaleDateString()}</p>
                     </div>
                     <div className="cursos_container">

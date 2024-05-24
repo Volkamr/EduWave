@@ -4,17 +4,41 @@ import SideBarP from '../Profesor/SideBarP/SideBarP';
 import Good from '../../assets/Good.png'
 import Hola from '../../assets/hola.png'
 import { Link } from 'react-router-dom';
-
+import { getProfeRequest } from '../../api/profesores.api';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const PerfilProfesor = () => {
+
+    const [user, setUser] = useState([]);
+    const [token, setToken] = useState(useParams().accessToken)
+
+    useEffect(() => {
+        const loggedUserJSON = window.localStorage.getItem('UserToken');
+        const local_data = JSON.parse(loggedUserJSON)
+        if (loggedUserJSON != null && loggedUserJSON.token == token) {
+            setToken(JSON.stringify(local_data.token));
+        }
+
+    }, [token]);
+
+    useEffect(() => {
+        async function loadUser(token) {
+            const response = await getProfeRequest(token);
+            setUser(response.data)
+            console.log(response)
+        }
+        loadUser(token)
+    }, [token]);
+
     return (
         <section className='perfilProfesor'>
             <div>
-                <SideBarP></SideBarP>
+                <SideBarP accessToken={token}></SideBarP>
             </div>
             <div className="profesorContenido">
                 <div className="cabecera">
-                    <h2 className='titulo'>Hello, Ms. Maria Paula</h2>
+                    <h2 className='titulo'>Hello, Ms. {user.nombre}</h2>
                     <p> Hoy es Miercoles, 30 Octubre 2021 </p>
                 </div>
 

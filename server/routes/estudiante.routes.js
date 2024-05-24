@@ -11,7 +11,7 @@ import {
 const router = Router();
 
 router.get("/EduWave/Api/estudiante", getEstudiantes);
-router.get("/EduWave/Api/estudiante/:id", getEstudiante)
+router.get('/EduWave/Api/Estudiante/:accessToken', getEstudiante)
 router.post("/EduWave/Api/estudiante", createEstudiante);
 router.post("/EduWave/Api/Estudiante/Login", postLoginEstudiante);
 router.put("/EduWave/Api/estudiante/:id", updateEstudiante);
