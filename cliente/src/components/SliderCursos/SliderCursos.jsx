@@ -6,7 +6,13 @@ import { Pagination } from 'swiper/modules';
 import './SliderCursos.css';
 import { lista_cursos } from '../../Data';
 
-const SliderCursos = () => {
+const SliderCursos = ({accessToken}) => {
+
+  const handleClick = () => {
+    window.location.href = `/EduWave/${accessToken}/curso`;
+  };
+
+
   return (
     <div className="slider-cursos-container">
       <Swiper
@@ -37,7 +43,7 @@ const SliderCursos = () => {
         {lista_cursos.map(({ nombre, inicio, final, color }, index) => {
           return (
             <SwiperSlide className="sliderCursos__item card card-one" key={index}>
-              <div className="item" style={{ backgroundColor: color }}>
+              <div className="item" style={{ backgroundColor: color }} onClick={handleClick}>
                 <div className="texto">
                   <h3 className="nombre_curso">{nombre}</h3>
                   <p className="datos_curso">{"Fecha inicio: " + inicio}</p>

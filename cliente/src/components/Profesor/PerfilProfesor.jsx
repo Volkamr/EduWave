@@ -43,12 +43,12 @@ const PerfilProfesor = () => {
                 </div>
 
                 <div className="funciones">
-                    <Link to="/EduWave/profesor/cursos/crear" className="crear">
+                    <Link to={`/EduWave/profesor/${token}/cursos/crear`} className="crear">
                         <h2>Crear Cursos</h2>
                         <p>Aqui puedes crear los cursos para los estudiantes de la aplicacion</p>
                     </Link>
 
-                    <Link to="/EduWave/profesor/cursos" className="crear">
+                    <Link to={`/EduWave/profesor/${token}/cursos`} className="crear">
                         <h2>Buscar Cursos</h2>
                         <p>Aqui puedes encontrar tus cursos presentes dentro de la aplicacion</p>
                     </Link>

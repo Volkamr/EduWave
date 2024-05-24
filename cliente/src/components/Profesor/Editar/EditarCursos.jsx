@@ -2,13 +2,17 @@ import React from "react";
 import SideBarP from "../SideBarP/SideBarP";
 import './EditarCursos.css';
 import { FaImage } from "react-icons/fa6";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 const EditarCursos = () => {
+    const [token, setToken] = useState(useParams().accessToken);
+
     return (
         
         <section className="CrearCursos">
             <div>
-                <SideBarP></SideBarP>
+                <SideBarP accessToken={token}></SideBarP>
             </div>
             <div className="crearCursosContenido">
                 <div className="formulariosCrear">

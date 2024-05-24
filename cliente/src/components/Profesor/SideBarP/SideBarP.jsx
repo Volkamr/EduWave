@@ -40,14 +40,14 @@ const SideBarP = ({accessToken}) => {
                         <span className="tooltip">Perfil</span>
                     </li>
                     <li>
-                        <Link to="/EduWave/profesor/cursos">
+                        <Link to={`/EduWave/profesor/${accessToken}/cursos`}>
                             <box-icon className="bx bx-folder" type='solid' name='folder'></box-icon>
                             <span className="links_name">Cursos</span>
                         </Link>
                         <span className="tooltip">Cursos</span>
                     </li>
                     <li>
-                        <Link to="/EduWave/profesor/opiniones">
+                        <Link to={`/EduWave/profesor/${accessToken}/opiniones`}>
                             <box-icon className="bx bx-comment" type='solid' name='chat'></box-icon>
                             <span className="links_name">Opiniones</span>
                         </Link>

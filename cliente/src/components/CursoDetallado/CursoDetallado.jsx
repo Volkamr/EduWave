@@ -5,6 +5,7 @@ import SideBar from '../SideBar/SideBar';
 import { lista_lecciones } from '../../Data';
 import Imagen from '../../assets/imagen_mas.png'
 import Hombre from '../../assets/hombre.jpg';
+import { useParams } from 'react-router-dom';
 
 const CursoDetallado = () => {
 
@@ -16,11 +17,17 @@ const CursoDetallado = () => {
         setCheckedItems(newCheckedItems);
     }
 
+    const [token, setToken] = useState(useParams().accessToken);
+
+    const handleClick = () => {
+        window.location.href = `/EduWave/${token}/leccion`;
+      };
+
     return (
 
         <div className="curso_det_body">
             <div className="sidebar_home">
-                <SideBar />
+                <SideBar accessToken={token}/>
             </div>
             <div className="curso_det_content">
                 <div className="curso_content">
@@ -44,7 +51,7 @@ const CursoDetallado = () => {
                         <h2>Contenido del curso</h2>
                         {lista_lecciones.map(({ nombre, descripcion }, index) => {
                             return (
-                                <div className="leccion" key={index}>
+                                <div className="leccion" key={index} onClick={handleClick}>
                                     <div className="img_leccion"></div>
                                     <div className="detalle_leccion">
                                         <h4>{nombre}</h4>

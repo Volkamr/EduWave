@@ -4,6 +4,7 @@ import './CrearCursos.css';
 import { FaImage } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import {Form, Formik} from 'formik';
+import { useParams } from "react-router-dom";
 
 const CrearCursos = () => {
 
@@ -30,12 +31,14 @@ const CrearCursos = () => {
         });
     };
 
+    const [token, setToken] = useState(useParams().accessToken);
+
 
     return (
         
         <section className="CrearCursos">
             <div>
-                <SideBarP></SideBarP>
+                <SideBarP accessToken={token}></SideBarP>
             </div>
             <div className="crearCursosContenido">
                 <div className="formulariosCrear">

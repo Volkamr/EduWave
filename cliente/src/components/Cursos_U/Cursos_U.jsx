@@ -10,12 +10,15 @@ import opiniones from '../../assets/opiniones.png';
 import gato from '../../assets/Gato.jpg';
 import estrela from '../../assets/estrela.png';
 import like from '../../assets/laik.png';
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 
+const Cursos_U = () => {
+    const [token, setToken] = useState(useParams().accessToken)
 
-const Cursos = () => {
     return (
         <div className='grid_principal'>
-            <SideBar></SideBar>
+            <SideBar accessToken={token}></SideBar>
             <div className='cont_pagcurs'>
                 <div className='divizquierda'>
                     <div className='busqueda'>
@@ -184,4 +187,4 @@ const Cursos = () => {
     );
 };
 
-export default Cursos;
+export default Cursos_U;

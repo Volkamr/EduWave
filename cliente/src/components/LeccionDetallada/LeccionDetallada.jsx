@@ -7,16 +7,18 @@ import Imagen from '../../assets/imagen_mas.png'
 import Hombre from '../../assets/hombre.jpg';
 import { leccionDetallada, lista_temas } from '../../Data';
 import 'boxicons';
+import { useParams } from 'react-router-dom';
 
 
 const LeccionDetallada = () => {
+    const [token, setToken] = useState(useParams().accessToken);
 
 
     return (
 
         <div className="curso_det_body">
             <div className="sidebar_home">
-                <SideBar />
+                <SideBar accessToken={token}/>
             </div>
             <div className="leccion_det_content">
                 <div className="leccion_content">               

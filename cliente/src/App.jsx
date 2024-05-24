@@ -18,6 +18,8 @@ import BuscarAdm from './components/Admin/Buscar/BuscarAdm';
 import ForumPage from './components/ForumPage/ForumPage';
 import SideBar from './components/SideBar/SideBar';
 import Examen from './components/Examen/Examen';
+import Cursos_U from './components/Cursos_U/Cursos_U'
+import Opiniones from './components/Profesor/Opiniones/Opiniones'
 
 function App() {
   return (
@@ -26,20 +28,22 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/EduWave/:accessToken" element={<Usuario />} />
         <Route path="/EduWave/:accessToken/perfil" element={<PerfilUsuario />} />
-        <Route path="/EduWave/perfil/progreso" element={<L_progreso />} />
-        <Route path="/EduWave/perfil/favoritos" element={<L_favoritos />} />
-        <Route path="/EduWave/perfil/terminados" element={<L_terminados />} />
+        <Route path="/EduWave/:accessToken/perfil/progreso" element={<L_progreso />} />
+        <Route path="/EduWave/:accessToken/perfil/favoritos" element={<L_favoritos />} />
+        <Route path="/EduWave/:accessToken/perfil/terminados" element={<L_terminados />} />
+        <Route path="/EduWave/:accessToken/perfil/cursos" element={<Cursos_U />} />
         <Route path="/EduWave/profesor/:accessToken" element={<PerfilProfesor />} />
-        <Route path="/EduWave/profesor/cursos" element={<CursoSP />} />
-        <Route path="/EduWave/profesor/cursos/crear" element={<CrearCursos />} />
-        <Route path="/EduWave/profesor/cursos/editar" element={<EditarCursos />} />
-        <Route path="/EduWave/cursos" element={<CursoDetallado />} />
-        <Route path="/EduWave/leccion" element={<LeccionDetallada />} />
-        <Route path="/EduWave/tarea" element={<TareaDetallada />} />
+        <Route path="/EduWave/profesor/:accessToken/cursos" element={<CursoSP />} />
+        <Route path="/EduWave/profesor/:accessToken/cursos/crear" element={<CrearCursos />} />
+        <Route path="/EduWave/profesor/:accessToken/cursos/editar" element={<EditarCursos />} />
+        <Route path="/EduWave/profesor/:accessToken/opiniones" element={<Opiniones />} />
+        <Route path="/EduWave/:accessToken/curso" element={<CursoDetallado />} />
+        <Route path="/EduWave/:accesssToken/leccion" element={<LeccionDetallada />} />
+        <Route path="/EduWave/:accessToken/tarea" element={<TareaDetallada />} />
         <Route path='/EduWave/admin/:accessToken' element={<PerfilAdmin />}/>
         <Route path="/EduWave/admin/buscar" element={<BuscarAdm />} />
-        <Route path="/EduWave/foros" element={<ForumPage />} />
-        <Route path="/EduWave/perfil/curso/tarea/examen" element={<Examen />} />
+        <Route path="/EduWave/:accessToken/foros" element={<ForumPage />} />
+        <Route path="/EduWave/:accessToken/tarea/examen" element={<Examen />} />
       </Routes>
     </div>
   );

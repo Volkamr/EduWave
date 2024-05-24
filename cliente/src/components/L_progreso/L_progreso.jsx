@@ -5,11 +5,17 @@ import lupa from '../../assets/lupa2.png';
 import compu from '../../assets/prototipo.png';
 import flecha from '../../assets/stonks.png';
 import calendar from '../../assets/nuevo_calendar.png';
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+
 
 const L_progreso = () => {
+
+    const [token, setToken] = useState(useParams().accessToken)
+
     return (
         <div className='grid_principal'>
-            <SideBar></SideBar>
+            <SideBar accessToken={token}></SideBar>
             <div className='cont_pag'>
                 <h1>Cursos en progreso</h1>
                 <div className='inp_bot'>
@@ -28,15 +34,15 @@ const L_progreso = () => {
                     </div>
                     <div></div>
                     <button type='button' className='e1'>
-                        En progreso
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/progreso`}>En progreso</a>
                     </button>
                     <div></div>
                     <button type='button' className='e2'>
-                        Favoritos
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/favoritos`}>Favoritos</a>
                     </button>
                     <div></div>
                     <button type='button' className='e2'>
-                        Terminados
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/terminados`}>Terminados</a>
                     </button>
                     <div className='separador'></div>
                     <div className='separador2'></div>

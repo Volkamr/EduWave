@@ -5,11 +5,15 @@ import lupa from '../../assets/lupa2.png';
 import saludo from '../../assets/gow.png';
 import cal from '../../assets/nuevo_calendar.png';
 import dip from '../../assets/diploma.png';
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 
 const L_terminados = () => {
+    const [token, setToken] = useState(useParams().accessToken)
+
     return (
         <div className='grid_principal'>
-            <SideBar></SideBar>
+            <SideBar accessToken={token}></SideBar>
             <div className='cont_pag'>
                 <h1>Cursos terminados</h1>
                 <div className='inp_bot'>
@@ -28,15 +32,15 @@ const L_terminados = () => {
                     </div>
                     <div></div>
                     <button type='button' className='e2'>
-                        En progreso
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/progreso`}>En progreso</a>
                     </button>
                     <div></div>
                     <button type='button' className='e2'>
-                        Favoritos
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/favoritos`}>Favoritos</a>
                     </button>
                     <div></div>
                     <button type='button' className='e1'>
-                        Terminados
+                        <a className="a_cursos" href={`/EduWave/${token}/perfil/terminados`}>Terminados</a>
                     </button>
                     <div className='separador'></div>
                     <div className='separador2'></div>

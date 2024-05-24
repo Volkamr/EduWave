@@ -13,6 +13,10 @@ const Usuario = () => {
     const [user, setUser] = useState([]);
     const [token, setToken] = useState(useParams().accessToken)
 
+    const handleClick = () => {
+        window.location.href = `/EduWave/${token}/tarea`;
+      };
+
     useEffect(() => {
         const loggedUserJSON = window.localStorage.getItem('UserToken');
         const local_data = JSON.parse(loggedUserJSON)
@@ -54,7 +58,7 @@ const Usuario = () => {
                         <p className="texto_p">Hoy es {fechaActual.toLocaleDateString()}</p>
                     </div>
                     <div className="cursos_container">
-                        <SliderCursos></SliderCursos>
+                        <SliderCursos accessToken={token}></SliderCursos>
                     </div>
                     <div className="info">
                         <div className="tareas_div">
@@ -63,7 +67,7 @@ const Usuario = () => {
                             {
                                 lista_tareas.map(({nombre, curso}, index)=>{
                                     return(
-                                        <div className="tarea">
+                                        <div className="tarea" onClick={handleClick}>
                                             <h3 className="nombre_tarea">{nombre}</h3>
                                             <p className="texto_p">Curso: {curso}</p>
                                         </div>

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import '../SideBarP/SideBarP.css';
 import SideBarP from '../SideBarP/SideBarP';
 import './Opiniones.css';
+import { useParams } from 'react-router-dom';
 
 const Opiniones = () => {
+  const [token, setToken] = useState(useParams().accessToken);
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   const cursos = [
@@ -46,7 +48,7 @@ const Opiniones = () => {
 
   return (
     <div className="opiniones-container">
-      <SideBarP />
+      <SideBarP accessToken={token}/>
       <div className="contenido-opiniones">
         <div className="lista-cursos">
           <h1>Opiniones de estudiantes</h1>

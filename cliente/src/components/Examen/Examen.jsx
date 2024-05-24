@@ -2,12 +2,17 @@ import React from 'react';
 import SideBar from '../SideBar/SideBar'; // Asegúrate de importar tu componente SideBar correctamente
 import { lista_preguntas } from '../../Data'; // Importar lista_preguntas directamente
 import './Examen.css'
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Examen = () => {
+    const [token, setToken] = useState(useParams().accessToken);
+
+   
     return (
         <div className="curso_det_body">
         <div className="sidebar_home">
-            <SideBar />
+            <SideBar accessToken={token}/>
         </div>
         <div className="examen_det_content">
             <div className="examen_content">

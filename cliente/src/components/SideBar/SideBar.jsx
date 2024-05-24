@@ -39,21 +39,21 @@ const SideBar = ({ accessToken }) => {
                         <span className="tooltip">Perfil</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href={`/EduWave/${accessToken}/perfil/cursos`}>
                             <box-icon className="bx bx-folder" type='solid' name='folder'></box-icon>
                             <span className="links_name">Cursos</span>
                         </a>
                         <span className="tooltip">Cursos</span>
                     </li>
                     <li>
-                        <a href="/EduWave/perfil/progreso">
+                        <a href={`/EduWave/${accessToken}/perfil/progreso`}>
                             <box-icon className="bx bx-library" name='library'></box-icon>
                             <span className="links_name">Librería</span>
                         </a>
                         <span className="tooltip">Librería</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href={`/EduWave/${accessToken}/foros`}>
                             <box-icon className="bx bx-comment" type='solid' name='chat'></box-icon>
                             <span className="links_name">Foros</span>
                         </a>

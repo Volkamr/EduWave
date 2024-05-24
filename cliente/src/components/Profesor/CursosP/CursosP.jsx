@@ -5,12 +5,16 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdMore } from "react-icons/io";
 import { BsChatRightQuoteFill } from "react-icons/bs";
 import Good from '../../../assets/Good.png'
+import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 const CursosP = () => {
+    const [token, setToken] = useState(useParams().accessToken);
+
     return (
         <section className='cursosPro'>
             <div>
-                <SideBarP ></SideBarP>
+                <SideBarP accessToken={token}></SideBarP>
             </div>
             <div className="cursosP">
                 <div className="listaCursos">
