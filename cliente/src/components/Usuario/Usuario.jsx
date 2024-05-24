@@ -7,6 +7,29 @@ import Imagen from '../../assets/imagen_mas.png'
 
 const Usuario = () => {
 
+    /*
+    const [user, setUser] = useState([]);
+    const [token, setToken] = useState(useParams().accessToken)
+
+    useEffect(() => {
+        const loggedUserJSON = window.localStorage.getItem('UserToken');
+        const local_data = JSON.parse(loggedUserJSON)
+        if (loggedUserJSON != null && loggedUserJSON.token == token) {
+            setToken(JSON.stringify(local_data.token));
+        }
+
+    }, [token]);
+
+    useEffect(() => {
+        async function loadUser(token) {
+            const response = await getUserRequest(token);
+            setUser(response.data)
+            console.log(user)
+        }
+        loadUser(token)
+    }, [token]);
+    */
+
     const [fechaActual, setFechaActual] = useState(new Date());
 
     useEffect(() => {

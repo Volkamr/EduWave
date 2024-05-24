@@ -24,19 +24,19 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/EduWave" element={<Usuario />} />
+        <Route path="/EduWave/:accessToken" element={<Usuario />} />
         <Route path="/EduWave/perfil" element={<PerfilUsuario />} />
         <Route path="/EduWave/perfil/progreso" element={<L_progreso />} />
         <Route path="/EduWave/perfil/favoritos" element={<L_favoritos />} />
         <Route path="/EduWave/perfil/terminados" element={<L_terminados />} />
-        <Route path="/EduWave/profesor" element={<PerfilProfesor />} />
+        <Route path="/EduWave/profesor/:accessToken" element={<PerfilProfesor />} />
         <Route path="/EduWave/profesor/cursos" element={<CursoSP />} />
         <Route path="/EduWave/profesor/cursos/crear" element={<CrearCursos />} />
         <Route path="/EduWave/profesor/cursos/editar" element={<EditarCursos />} />
         <Route path="/EduWave/cursos" element={<CursoDetallado />} />
         <Route path="/EduWave/leccion" element={<LeccionDetallada />} />
         <Route path="/EduWave/tarea" element={<TareaDetallada />} />
-        <Route path='/EduWave/admin' element={<PerfilAdmin />}/>
+        <Route path='/EduWave/admin/:accessToken' element={<PerfilAdmin />}/>
         <Route path="/EduWave/admin/buscar" element={<BuscarAdm />} />
         <Route path="/EduWave/foros" element={<ForumPage />} />
         <Route path="/EduWave/perfil/curso/tarea/examen" element={<Examen />} />

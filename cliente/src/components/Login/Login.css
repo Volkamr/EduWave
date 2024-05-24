@@ -61,6 +61,8 @@
     color: black;
     font-size: 35px;
     margin-bottom: -5px;
+    margin-left: 50px;
+    margin-top: 20px;
 
 }
 
@@ -70,6 +72,7 @@
     height: 7px;
     background-color: #a45A49;
     border-radius: 5px;
+    margin-left: 50px;
 }
 
 .input-log {

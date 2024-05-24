@@ -1,5 +1,6 @@
 import {pool} from '../db.js';
 import bcrypt from 'bcrypt';
+import jwt from "jsonwebtoken";
 
 export const getProfesores = async(req, res) =>{
     const [result] = await pool.query(
@@ -115,6 +116,52 @@ export const createProfesor = async(req, res) =>{
         });
     }
 }
+
+export const postLoginProfesor = async (req, res) => {
+
+
+    try {
+        const data = req.body;
+        if (data.cedula != null && data.password != null) {
+
+            let passwordHaash = await (bcrypt.hash(data.password, 8))
+            const [result] = await pool.query("SELECT * FROM instructores WHERE cedula = ?", [data.cedula]);
+
+            if (result.length === 0) {
+                return res.status(200).json({
+                    message: "PROFESOR NO ENCONTRADO",
+                    success: false
+                });
+            } else if (!(await bcrypt.compare(data.password, result[0].password))) {
+                return res.status(200).json({
+                    message: "CONTRASEÑA INCORRECTA",
+                    success: false
+                });
+            } else {
+                const secretKey = process.env.SECRET_KEY;
+                const accessToken = jwt.sign({ cedula: result[0].cedula }, secretKey, {
+                    expiresIn: process.env.JWT_TIEMPO_EXPIRA
+                })
+                res.status(200).json({
+                    accessToken: accessToken,
+                    success: true
+                })
+            }
+        } else {
+            return res.status(200).json({
+                message: "No deben haber campos vacíos",
+                success: false
+            });
+        }
+
+    } catch (error) {
+        console.error('Error en la función postLoginProfesor:', error);
+        return res.status(500).json({
+            message: "Error en el servidor",
+            success: false
+        });
+    }
+};
 
 export const updateProfesor = (req, res) =>{
     res.send('actualizando profesor')

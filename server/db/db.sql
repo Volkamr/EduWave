@@ -143,3 +143,8 @@ CREATE TABLE links(
     leccion_id INT NOT NULL,
     FOREIGN KEY (leccion_id) REFERENCES lecciones(id)
 );
+
+CREATE TABLE Admins(
+    adm_user varchar(50) PRIMARY KEY NOT NULL,
+    password varchar(100) NOT NULL
+);

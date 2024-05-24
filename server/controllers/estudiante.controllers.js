@@ -1,5 +1,6 @@
 import {pool} from '../db.js';
 import bcrypt from 'bcrypt';
+import jwt from "jsonwebtoken";
 
 export const getEstudiantes = async(req, res) =>{
     const [result] = await pool.query(
@@ -21,6 +22,32 @@ export const getEstudiante = async(req, res) =>{
         nombre
     );
     res.json(result);
+}
+
+export const getUser = async (req, res) => {
+
+    const token = req.params.accessToken;
+    const key = process.env.SECRET_KEY;
+
+    if (token) {
+        jwt.verify(token, key, (err, decoded) => {
+            if (err) {
+                return res.status(403).json({ message: "Token inválido" })
+            } else {
+                req.idUsuario = decoded.idUsuario;
+            }
+        })
+    }
+
+    const id = req.idUsuario;
+    const [result] = await pool.query(
+        "Select cedula, fotoPerfil, nombre, edad, celular, email, password, genero, estado from empleados e " + 
+        "inner join municipios m on e.municipio_id = m.id " + 
+        "inner join departamentos d on m.departamento_id = d.id " + 
+        "where nombre = ? and estado = 1",
+        nombre
+    );
+    return res.status(200).json(result[0])
 }
 
 export const createEstudiante = async(req, res) =>{
@@ -122,3 +149,49 @@ export const updateEstudiante = (req, res) =>{
 export const deleteEstudiante = (req, res) =>{
     res.send('eliminando profesor')
 }
+
+export const postLoginEstudiante = async (req, res) => {
+
+
+    try {
+        const data = req.body;
+        if (data.cedula != null && data.password != null) {
+
+            let passwordHaash = await (bcrypt.hash(data.password, 8))
+            const [result] = await pool.query("SELECT * FROM empleados WHERE cedula = ?", [data.cedula]);
+
+            if (result.length === 0) {
+                return res.status(200).json({
+                    message: "USUARIO NO ENCONTRADO",
+                    success: false
+                });
+            } else if (!(await bcrypt.compare(data.password, result[0].password))) {
+                return res.status(200).json({
+                    message: "CONTRASEÑA INCORRECTA",
+                    success: false
+                });
+            } else {
+                const secretKey = process.env.SECRET_KEY;
+                const accessToken = jwt.sign({ cedula: result[0].cedula }, secretKey, {
+                    expiresIn: process.env.JWT_TIEMPO_EXPIRA
+                })
+                res.status(200).json({
+                    accessToken: accessToken,
+                    success: true
+                })
+            }
+        } else {
+            return res.status(200).json({
+                message: "No deben haber campos vacíos",
+                success: false
+            });
+        }
+
+    } catch (error) {
+        console.error('Error en la función postLogin:', error);
+        return res.status(500).json({
+            message: "Error en el servidor",
+            success: false
+        });
+    }
+};
